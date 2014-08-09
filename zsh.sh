@@ -1,6 +1,4 @@
 #!/bin/bash
-${USER}n/bash
- 
 ######################
 # Name : zsh Installer!
 #
