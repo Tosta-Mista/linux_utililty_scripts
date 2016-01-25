@@ -42,8 +42,8 @@ echo '========================================
 * Setup zsh by default :
 ========================================
 '
-su - root -c 'chsh'
-su - ${USER} -c 'chsh'
+su - root -c 'chsh' && chsh
+
 echo '========================================
 = [TIPS]                               =
 = You can add users to zsh, execute    =
