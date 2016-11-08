@@ -18,18 +18,18 @@ echo '###################################
 ========================================
 '
 apt-get update && apt-get upgrade
-apt-get install zsh
+apt-get install zsh curl
  
 echo '========================================
 * Downloading config files :
 ========================================
 '
 cd ~
-wget http://formation-debian.via.ecp.fr/fichiers-config/zshrc > /etc/zsh/zshrc
-wget http://formation-debian.via.ecp.fr/fichiers-config/zshenv > /etc/zsh/zshenv
-wget http://formation-debian.via.ecp.fr/fichiers-config/zlogin > /etc/zsh/zlogin
-wget http://formation-debian.via.ecp.fr/fichiers-config/zlogout > /etc/zsh/zlogout
-wget http://formation-debian.via.ecp.fr/fichiers-config/dir_colors > /etc/dir_colors
+curl http://formation-debian.via.ecp.fr/fichiers-config/zshrc > /etc/zsh/zshrc
+curl http://formation-debian.via.ecp.fr/fichiers-config/zshenv > /etc/zsh/zshenv
+curl http://formation-debian.via.ecp.fr/fichiers-config/zlogin > /etc/zsh/zlogin
+curl http://formation-debian.via.ecp.fr/fichiers-config/zlogout > /etc/zsh/zlogout
+curl http://formation-debian.via.ecp.fr/fichiers-config/dir_colors > /etc/dir_colors
  
 echo '========================================
 * Setup zsh by default :
