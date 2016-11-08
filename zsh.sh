@@ -25,24 +25,17 @@ echo '========================================
 ========================================
 '
 cd ~
-wget http://formation-debian.via.ecp.fr/fichiers-config/zshrc
-wget http://formation-debian.via.ecp.fr/fichiers-config/zshenv
-wget http://formation-debian.via.ecp.fr/fichiers-config/zlogin
-wget http://formation-debian.via.ecp.fr/fichiers-config/zlogout
-wget http://formation-debian.via.ecp.fr/fichiers-config/dir_colors
- 
-echo '========================================
-* Moving Files :
-========================================
-'
-mv zshrc zshenv zlogin zlogout /etc/zsh/
-mv dir_colors /etc/
+wget http://formation-debian.via.ecp.fr/fichiers-config/zshrc > /etc/zsh/zshrc
+wget http://formation-debian.via.ecp.fr/fichiers-config/zshenv > /etc/zsh/zshenv
+wget http://formation-debian.via.ecp.fr/fichiers-config/zlogin > /etc/zsh/zlogin
+wget http://formation-debian.via.ecp.fr/fichiers-config/zlogout > /etc/zsh/zlogout
+wget http://formation-debian.via.ecp.fr/fichiers-config/dir_colors > /etc/dir_colors
  
 echo '========================================
 * Setup zsh by default :
 ========================================
 '
-su - root -c 'chsh' && chsh
+chsh
 
 echo '========================================
 = [TIPS]                               =
